@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(ElMessiri-SemiBold.ttf);
-    font-weight: bold;
-}
+
 body{
     font-family: "Lato", sans-serif;
 }
@@ -20,7 +16,7 @@ body{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #fff;
 }
-.navbar-nav .nav-link.active {
+/* .navbar-nav .nav-link.active {
     background: -webkit-linear-gradient(0deg, #8123b5, #7c00ff);
     color: #fff !important;
     border-radius: 6px;
@@ -28,7 +24,7 @@ body{
     font-size: 17px;
     font-weight: 500;
 
-}
+} */
 
 .navbar-expand-lg .navbar-nav .nav-link {
     color: #000;
@@ -117,9 +113,36 @@ border: 2px solid #7c00ff;
         left: -62px;
         top:-32px;
     }
+    .chemical-left-leaf{
+      background-image: url(../../assets/image/leaf3.png);
+      height: 30vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center left;
+      position: relative;
+      right: 0;
+      top: 90px;
+      rotate: 90deg;
+    }
+    .chemical-left-leaf-two{
+      background-image: url(../../assets/image/leaf3.png);
+      height: 30vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center left;
+      position: relative;
+      right: 38px;
+      top: 90px;
+    }
     .left-leaf p {
         visibility: hidden;
     }
+    .chemical-left-leaf p {
+      visibility: hidden;
+  }
+  .chemical-left-leaf-two p{
+    visibility: hidden;
+  }
     .title_head{
         width: 100vw;
         margin-left: -13rem;
@@ -174,8 +197,14 @@ border: 2px solid #7c00ff;
     left: -90px;
 }
 
+.chemical_frame {
+  background-color: #d8e3e8;
+  padding-bottom: 3rem;
+}
 
-  
+.chemical_frame .title {
+  height: 71px;
+} 
   .float-bob-y {
     -webkit-animation-name: float-bob-y;
     animation-name: float-bob-y;
@@ -488,4 +517,17 @@ background-color:  #f1ece6dc;
   border: 0;
   text-decoration: none;
 }
- 
+.chemical_sec_2{
+  padding: 3rem 0;
+}
+
+.image-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-sec img {
+
+  height: 300px;
+}
